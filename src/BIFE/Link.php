@@ -86,10 +86,6 @@ class BIFE_Link extends BIFE_Container {
     {
         $url = @$attrs['URL'];
         unset($attrs['URL']);
-        if (isset($attrs['BIFE'])) {
-            $attrs['DATA-BIFE']  = $attrs['BIFE'];
-            unset($attrs['BIFE']);
-        }
         $query = array();
         foreach($attrs as $name => $value) {
             if (substr($name, 0, 5) === 'DATA-') {
