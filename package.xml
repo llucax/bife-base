@@ -16,7 +16,7 @@
     </maintainers>
 
     <release>
-        <version>0.12</version>
+        <version>1.0.0beta1</version>
         <date>2003-06-29</date>
         <state>beta</state>
         <notes>Check http://bife.llucax.hn.org/ for details.</notes>
@@ -35,7 +35,9 @@
             </dir>
             <dir name="examples" role="doc">
                 <file>index.php</file>
+                <file>bife.php</file>
                 <file>index.xbf</file>
+                <file>link.xbf</file>
                 <dir name="templates">
                     <file>bife_page.tpl.html</file>
                     <file>bife_title.tpl.html</file>

@@ -1,17 +1,16 @@
 $Id$
 
 
-Version 0.13
-============
-
-    - Start using config file for default widgets attributes.
-
-...
-
 Version 1.0.0
 =============
 
     - Make a way to put all classes in a package together in a single file to
       avoid overhead in require_once calls (to be reviewed).
     - Write more documentation.
+
+
+Version 1.2.0
+=============
+
+    - Start using config file for default widgets attributes.
 
