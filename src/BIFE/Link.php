@@ -85,6 +85,9 @@ class BIFE_Link extends BIFE_Container {
     function getURL($attrs) // ~X2C
     {
         $url = @$attrs['URL'];
+        if (substr($url, strlen($url)-1) == '/') {
+            $url .= 'index.xbf'; // TODO - add a configuration option for this.
+        }
         unset($attrs['URL']);
         $query = array();
         foreach($attrs as $name => $value) {
@@ -98,6 +101,32 @@ class BIFE_Link extends BIFE_Container {
             $url .= '?' . join('&', $query);
         }
         return $url;
+    }
+    // -X2C
+
+    // +X2C Operation 160
+    /**
+     * Gets the relative path of the current BIFE file for web (URL) usage.
+     *
+     * @return string
+     * @access public
+     */
+    function getWebPath() // ~X2C
+    {
+        return (@$_SERVER['PATH_INFO']) ? '../' : './';
+    }
+    // -X2C
+
+    // +X2C Operation 161
+    /**
+     * Gets the relative path of the current BIFE file for filesystem usage.
+     *
+     * @return string
+     * @access public
+     */
+    function getFsPath() // ~X2C
+    {
+        return dirname('.' . @$_SERVER['PATH_INFO']) . '/';
     }
     // -X2C
 

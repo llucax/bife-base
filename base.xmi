@@ -9,7 +9,7 @@
   <XMI.metamodel xmi.name="UML" href="UML.xml" xmi.version="1.3" />
  </XMI.header>
  <XMI.content>
-  <docsettings viewid="2" documentation="Parse XML data getting widgets." uniqueid="159" />
+  <docsettings viewid="2" documentation="Parse XML data getting widgets." uniqueid="161" />
   <umlobjects>
    <UML:Class stereotype="" package="BIFE" xmi.id="5" abstract="1" documentation="x2c:extern" name="Container" static="0" scope="200" />
    <UML:Class stereotype="" package="BIFE" xmi.id="61" abstract="1" documentation="x2c:extern" name="Fallback" static="0" scope="200" />
@@ -28,6 +28,8 @@
     <UML:Operation stereotype="" package="" xmi.id="142" type="string" abstract="0" documentation="Gets a URL string based on Link attributes." name="getURL" static="0" scope="200" >
      <UML:Parameter stereotype="" package="" xmi.id="1" value="" type="array" abstract="0" documentation="Link attributes." name="attrs" static="0" scope="200" />
     </UML:Operation>
+    <UML:Operation stereotype="" package="" xmi.id="160" type="string" abstract="0" documentation="Gets the relative path of the current BIFE file for web (URL) usage." name="getWebPath" static="0" scope="200" />
+    <UML:Operation stereotype="" package="" xmi.id="161" type="string" abstract="0" documentation="Gets the relative path of the current BIFE file for filesystem usage." name="getFsPath" static="0" scope="200" />
     <UML:Operation stereotype="" package="" xmi.id="157" type="string" abstract="0" documentation="Renders the widget." name="render" static="0" scope="200" >
      <UML:Parameter stereotype="" package="" xmi.id="1" value="" type="&amp;HTML_Template_HIT" abstract="0" documentation="Template to use to render the widget." name="template" static="0" scope="200" />
     </UML:Operation>
@@ -38,7 +40,7 @@
     <widgets>
      <UML:ConceptWidget usesdiagramfillcolour="0" width="106" showattsigs="600" usesdiagramusefillcolour="0" x="82" linecolour="#ff0000" y="11" showopsigs="600" usesdiagramlinecolour="0" fillcolour="#dcdcdc" height="25" usefillcolor="1" showattributes="0" xmi.id="5" showoperations="0" showpackage="1" showscope="1" showstereotype="0" font="Helvetica,9,-1,5,48,0,0,0,0,0" />
      <UML:ConceptWidget usesdiagramfillcolour="0" width="97" showattsigs="601" usesdiagramusefillcolour="0" x="15" linecolour="#ff0000" y="90" showopsigs="600" usesdiagramlinecolour="0" fillcolour="#dcdcdc" height="25" usefillcolor="1" showattributes="0" xmi.id="61" showoperations="0" showpackage="1" showscope="1" showstereotype="0" font="Helvetica,9,-1,5,48,0,0,0,0,0" />
-     <UML:ConceptWidget usesdiagramfillcolour="1" width="107" showattsigs="601" usesdiagramusefillcolour="1" x="152" linecolour="none" y="89" showopsigs="600" usesdiagramlinecolour="1" fillcolour="none" height="82" usefillcolor="1" showattributes="1" xmi.id="110" showoperations="1" showpackage="1" showscope="1" showstereotype="0" font="Helvetica,9,-1,5,48,0,0,0,0,0" />
+     <UML:ConceptWidget usesdiagramfillcolour="0" width="107" showattsigs="601" usesdiagramusefillcolour="0" x="152" linecolour="#ff0000" y="89" showopsigs="600" usesdiagramlinecolour="0" fillcolour="#ffffc0" height="112" usefillcolor="1" showattributes="1" xmi.id="110" showoperations="1" showpackage="1" showscope="1" showstereotype="0" font="Helvetica,9,-1,5,48,0,0,0,0,0" />
      <UML:ConceptWidget usesdiagramfillcolour="1" width="104" showattsigs="601" usesdiagramusefillcolour="1" x="11" linecolour="none" y="150" showopsigs="600" usesdiagramlinecolour="1" fillcolour="none" height="37" usefillcolor="1" showattributes="1" xmi.id="7" showoperations="1" showpackage="1" showscope="1" showstereotype="0" font="Helvetica,9,-1,5,48,0,0,0,0,0" />
     </widgets>
     <messages/>
@@ -74,7 +76,9 @@
       <listitem open="0" type="813" id="110" label="Link" >
        <listitem open="0" type="815" id="111" label="BIFE_Link" />
        <listitem open="0" type="815" id="112" label="__construct" />
+       <listitem open="0" type="815" id="161" label="getFsPath" />
        <listitem open="0" type="815" id="142" label="getURL" />
+       <listitem open="0" type="815" id="160" label="getWebPath" />
        <listitem open="0" type="815" id="157" label="render" />
       </listitem>
       <listitem open="0" type="813" id="7" label="Translate" >
