@@ -5,6 +5,7 @@ Version 0.12
 ============
 
     - Look if using $_SERVER['PATH_INFO'] in Link is viable.
+    - Preserve .xbf file when no bife attribute is specified in Link.
 
 
 Version 0.13
