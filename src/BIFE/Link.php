@@ -85,9 +85,6 @@ class BIFE_Link extends BIFE_Container {
     function getURL($attrs) // ~X2C
     {
         $url = @$attrs['URL'];
-        if (substr($url, strlen($url)-1) == '/') {
-            $url .= 'index.xbf'; // TODO - add a configuration option for this.
-        }
         unset($attrs['URL']);
         $query = array();
         foreach($attrs as $name => $value) {
