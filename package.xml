@@ -33,13 +33,14 @@
                 <file>README</file>
                 <file>ROADMAP</file>
             </dir>
-            <!-- EXAMPLES -->
             <dir name="examples" role="doc">
                 <file>index.php</file>
                 <file>index.xbf</file>
-                <file>templates/bife_page.tpl.html</file>
-                <file>templates/bife_title.tpl.html</file>
-                <file>templates/bife_link.tpl.html</file>
+                <dir name="templates">
+                    <file>bife_page.tpl.html</file>
+                    <file>bife_title.tpl.html</file>
+                    <file>bife_link.tpl.html</file>
+                </dir>
             </dir>
         </filelist>
     </release>

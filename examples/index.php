@@ -26,7 +26,7 @@
 // $Id$
 //
 
-ini_set('include_path', '../src:../../hit/src:../../bife/src:',
+ini_set('include_path', '../src:../../hit/src:../../bife/src:' .
     ini_get('include_path'));
 umask('002');
 
