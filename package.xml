@@ -3,7 +3,10 @@
 <package version="1.0">
     <name>BIFE_Base</name>
     <summary>BIFE's basic implementation to make a simple website</summary>
-    <description>BIFE Base (tbd) <!-- TODO -->
+    <description>BIFE Base is basic implementation of BIFE. It consists in two
+classes, a Fallback class that searchs for a template and if it doesn't find
+one it copies the XML to the output, and a Link class, used to link a page to
+others.
     </description>
     <license>GPL</license>
     <maintainers>
@@ -16,7 +19,7 @@
     </maintainers>
 
     <release>
-        <version>1.0.0beta2</version>
+        <version>1.0.0beta3</version>
         <date>2003-06-29</date>
         <state>beta</state>
         <notes>Check http://bife.llucax.hn.org/ for details.</notes>
@@ -38,6 +41,15 @@
                 <file>bife.php</file>
                 <file>index.xbf</file>
                 <file>link.xbf</file>
+                <dir name="dir">
+                    <file>index.xbf</file>
+                    <dir name="subdir">
+                        <file>index.xbf</file>
+                    </dir>
+                </dir>
+                <dir name="otherdir">
+                    <file>index.xbf</file>
+                </dir>
                 <dir name="templates">
                     <file>bife_page.tpl.html</file>
                     <file>bife_title.tpl.html</file>
