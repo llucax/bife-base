@@ -24,16 +24,23 @@
         <provides type="class" name="BIFE_Translate"/>
         <filelist>
             <!-- PHP -->
-            <file role="php">BIFE/Link.php</file>
-            <file role="php">BIFE/Translate.php</file>
+            <dir name="/" baseinstalldir="BIFE" role="php">
+                <file install-as="Link.php" name="src/BIFE/Link.php"/>
+                <file install-as="Translate.php" name="src/BIFE/Translate.php"/>
+            </dir>
             <!-- DOC -->
-            <file role="doc">README</file>
-            <file role="doc">ROADMAP</file>
-            <file role="doc">examples/index.php</file>
-            <file role="doc">examples/index.xbf</file>
-            <file role="doc">examples/templates/bife_page.tpl.html</file>
-            <file role="doc">examples/templates/bife_title.tpl.html</file>
-            <file role="doc">examples/templates/bife_link.tpl.html</file>
+            <dir name="/" role="doc">
+                <file>README</file>
+                <file>ROADMAP</file>
+            </dir>
+            <!-- EXAMPLES -->
+            <dir name="examples" role="doc">
+                <file>index.php</file>
+                <file>index.xbf</file>
+                <file>templates/bife_page.tpl.html</file>
+                <file>templates/bife_title.tpl.html</file>
+                <file>templates/bife_link.tpl.html</file>
+            </dir>
         </filelist>
     </release>
     <deps>

@@ -26,9 +26,8 @@
 // $Id$
 //
 
-$tmp = ini_get('include_path');
-ini_set('include_path', "..:$tmp");
-unset($tmp);
+ini_set('include_path', '../src:../../hit/src:../../bife/src:',
+    ini_get('include_path'));
 umask('002');
 
 require_once 'HTML/Template/HIT.php';
