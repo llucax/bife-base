@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page title="Hi again!">
+    <Title>BIFE Links are working too!</Title>
+    <P>Go <Link bife="index.xbf">back</Link>.</P>
+    <HR noshade="noshade" size="2"/>
+    <Link bife="link.xbf" data-s="1" data-b="1">View BIFE (xbf) source</Link> |
+    <Link data-s="1">View PHP source</Link>
+</Page>
